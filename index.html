@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
-    <scripts src="index.js" type="text/javascript"></scripts>
+    <script type="text/javascript">
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+          showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+      
+          if (n > slides.length) { slideIndex = 1; }
+          if (n < 1) { slideIndex = slides.length; }
+      
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";  
+          dots[slideIndex - 1].className += " active";
+      }
+      </script>
 </head>
 <body>
-  <!--Navigation--> 
-  <nav> 
+  <!--Frame-->
+  <div class="hero-section">
+    <div class="hero-section-text">
+      <h1>Living Rights Legacy</h1>
+    </div>
+  </div>     
+   <!--Navigation--> 
+   <nav> 
     <ul class="menu menu-hover-lines">
       <li class="active"><a href="index.html">Home</a></li>
       <li><a href="about-us.html">About Us</a></li>
@@ -18,29 +53,33 @@
       <li><a href="environmentalscan.html">Environmental Scan</a></li>
     </ul>
   </nav>
-  <!--Frame-->
-  <div class="hero-section">
-    <div class="hero-section-text">
-      <h1>Living Rights Legacy</h1>
-    </div>
-  </div>     
+   <!--description-->
+     <aside>
+     <div class="work-feature-block row">
+      <div class="columns medium-5">
+        <h2 class="work-feature-block-header">Project Description</h2>
+        <p>Living Rights Legacy presents a map timeline of select exhibits from the Canadian Museum of Human Rights. Our motivations are to bring awareness and contribute to the conversation of human rights violations across the world and create an entry point for the museum’s contents on the subject. The intellectual significance is to highlight where human rights started prior to the Declaration from the United Nations in 1948 and where we are now, by supplying a visual and auditory display of some key events that have happened in human rights history and exhibits featured in the Canadian Museum of Human Rights. The importance of this project is that the exhibits are from the perspectives of survivors, favoring and centering their voices and sharing how exploitative and dehumanizing these actions are and have been. </p>
+      </div>
+    </div>   
+    </aside>
   <!--Carousel-->
+  <aside>
   <div class="carousel-container">
     <div class="mySlides fade">
       <div class="numbertext">1/3</div>
-      <img src="image/indeximg2.jpg" style="width:100%">
+      <img src="images/indeximg2.jpg">
       <div class="text">The Road to Reconciliation</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2/3</div>
-      <img src="images/indeximg3.jpg" style="width:100%">
+      <img src="images/indeximg3.jpg">
       <div class="text">Turning Point for Humanity</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3/3</div>
-      <img src="images/indeximg4.jpg" style="width:100%">
+      <img src="images/indeximg4.jpg">
       <div class="text">The Witness Blanket</div>
     </div>
 
@@ -53,65 +92,82 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
-     <!--description-->
-     <div class="work-feature-block row">
-      <div class="columns medium-5">
-        <h2 class="work-feature-block-header">Project Description</h2>
-        <p>Living Rights Legacy presents a map timeline of select exhibits from the Canadian Museum of Human Rights. Our motivations are to bring awareness and contribute to the conversation of human rights violations across the world and create an entry point for the museum’s contents on the subject. The intellectual significance is to highlight where human rights started prior to the Declaration from the United Nations in 1948 and where we are now, by supplying a visual and auditory display of some key events that have happened in human rights history and exhibits featured in the Canadian Museum of Human Rights. The importance of this project is that the exhibits are from the perspectives of survivors, favoring and centering their voices and sharing how exploitative and dehumanizing these actions are and have been. </p>
-      </div>
-    </div>    
+</aside>
     <!--partners-->
-   
+    <section>
+      <div class="container-xxl py-5">
+          <div class="container">
+              <h2 class="title">Our Partners</h2>
+              <div class="partners">
+                  <div class="partner-item">
+                      <div class="partners-text">
+                          <img class="img-fluid" src="images/center for human rights.jpeg" height="100px" width="100px">
+                      </div>
+                      <h4 class="name">University of Manitoba</h4>
+                      <p class="desc">"To bring together researchers and communities committed to intersectional resarch, scholarship, training, and programming on human rights and social justice issues."</p>
+                      <a class="btn btn-sm" href="https://umanitoba.ca/">
+                          <i class="fa fa-plus text-primary me-2"></i>Read More
+                      </a>
+                  </div>
+  
+                  <div class="partner-item">
+                      <div class="partners-text">
+                          <img class="img-fluid" src="images/canada council for the arts.jpeg" height="100px" width="100px">
+                      </div>
+                      <h4 class="name">Canada Council for the Arts</h4>
+                      <p class="desc">"To contribute to the vibrancy of a creative and diverse arts and literary scene through grants and services."</p>
+                      <a class="btn btn-sm" href="https://canadacouncil.ca/">
+                          <i class="fa fa-plus text-primary me-2"></i>Read More
+                      </a>
+                  </div>
+  
+                  <div class="partner-item">
+                      <div class="partners-text">
+                          <img class="img-fluid" src="images/friends.jpeg" height="100px" width="100px">
+                      </div>
+                      <h4 class="name">Friends of the Canadian Museum of Human Rights</h4>
+                      <p class="desc">"To attract and sustain all forms of philanthropic contributions for the Museum from a broad range of supporters across Canada and aroudn the world."</p>
+                      <a class="btn btn-sm" href="https://friendsofcmhr.com/">
+                          <i class="fa fa-plus text-primary me-2"></i>Read More
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
   <!--footer-->
   <div class="three-column-footer-contact-form-container">
     <footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
-      <div class="footer-left" data-equalizer-watch>
-        <div class="baseline">
-          <div class="contact-details">
-            <h6>Contact details</h6>
-            <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</p>
-            <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
-            <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</p>
-          </div>
-          <div class="newsletter">
-            <div class="input-group">
-              <h6>Sign up for our newsletter</h6>
-              <input class="input-group-field" type="email" placeholder="Email address">
+        <div class="footer-left" data-equalizer-watch>
+            <div class="contact-details">
+                <p><a href="index.html">Living Rights Legacy</a></p>
+                <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 867.5309</p>
+                <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> 1313 Mockingbird Lane</p>
             </div>
-            <a class="button expanded" href="#">Submit</a>
-          </div>
+            <div class="newsletter">
+                <h6>Sign up for our newsletter</h6>
+                <div class="input-group">
+                    <input class="input-group-field" type="email" placeholder="Email address">
+                    <a class="button" href="#">Submit</a>
+                </div>
+            </div>
         </div>
-       </div>
-      <div class="footer-center" data-equalizer-watch>
-        <div class="baseline">
-          <div class="newsletter">
+        <div class="footer-center" data-equalizer-watch>
             <h6>Contact form</h6>
             <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="Name">
-              <input class="input-group-field" type="email" placeholder="Email address">
-              <textarea placeholder="Message"></textarea>
+                <input class="input-group-field" type="text" placeholder="Name">
+                <input class="input-group-field" type="email" placeholder="Email address">
+                <textarea placeholder="Message"></textarea>
+                <a class="button expanded" href="#">Submit</a>
             </div>
-            <a class="button expanded" href="#">Submit</a>
-          </div>
         </div>
-      </div>
-      <div class="footer-right" data-equalizer-watch>
-        <div class="baseline">
-          <img class="thumbnail" src="https://placehold.it/100">
-          <h6>Opening times</h6>
-          <p>Mon - Fri 9:00am - 5:00pm</p>
-          <p>Sat 9:00am - 8:00pm</p>
-          <p>Sun 9:00am - 4:00pm</p>
-          <div class="social">
-            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-          </div>
+        <div class="footer-right" data-equalizer-watch>
+            <h4>Opening times</h4>
+            <p>Mon - Fri 9:00am - 5:00pm</p>
+            <p>Sat 9:00am - 8:00pm</p>
+            <p>Free Admissions on Sunday</p>
         </div>
-      </div>
     </footer>
-  </div>        
+</div>
 </body>
 </html>
