@@ -3,15 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
 </head>
 
-<body>
-    <h2>Jada Gannaway</h2>
-    <img src="images/Jada_Gannaway_Headshot.jpg" alt="Jada Gannaway's Headshot"/>
+<style>
+    /*Navigation*/
 
-    <h2>Madiha Ghous</h2>
-    <img src="images/Madiha headshot.jpg" alt="Madiha Ghous's Headshot"/>
+.menu-hover-lines {
+    text-align: justify;
+    list-style-type: none;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 750;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines li a {
+    padding: 0.75rem 0;
+    color: #A9A9A9;
+    position: relative;
+    margin-left: 1rem;
+    text-decoration: none;
+    display: block;
+    float: left;
+  }
+  
+  .menu-hover-lines li:first-child a {
+    margin-left: 0;
+  }
+  
+  .menu-hover-lines li.active > a {
+    background-color: transparent;
+  }
+  
+  .menu-hover-lines a:before,
+  .menu-hover-lines a::after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    background-color: #e1ad01;
+    width: 0;
+  }
+  
+  .menu-hover-lines a::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .menu-hover-lines a::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menu-hover-lines a:hover,
+  .menu-hover-lines li.active > a {
+    color: #0a0a0a;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines a:hover::before,
+  .menu-hover-lines .active a::before,
+  .menu-hover-lines a:hover::after,
+  .menu-hover-lines .active a::after {
+    width: 100%;
+  } 
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Adjust width for two members per row on larger screens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 80px; /* Fixed width for images */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px; /* Spacing between image and text */
+}
+
+.info {
+    flex-grow: 1; /* Allow info to take the remaining space */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .member {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0; /* Margin adjustment for mobile */
+    }
+}
+
+</style>
+<header>
+    <nav> 
+        <ul class="menu menu-hover-lines">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about-us.html">About Us</a></li>
+          <li><a href="audience.html">Audience</a></li>
+          <li><a href="deliverables.html">Deliverables and Outcomes</a></li>
+          <li><a href="functionality.html">Functionality and Tech</a></li>
+          <li><a href="environmentalscan.html">Environmental Scan</a></li>
+        </ul>
+      </nav>
+      <!--Frame-->
+</header>
+<main>
+    <div class="team">
+        <div class="member">
+            <img src="member1.jpg" alt="Member 1">
+            <div class="info">  
+                <h2>Rylee LaLonde</h2>
+                <p>Rylee LaLonde is a first year doctoral student studying Anthropology. Her research interests include Native American and Indigenous Studies, Community-Based Research, Human Rights Investigations, and Rights and Reclamation. </p>
+            </div>
+        </div>
+        <div class="member">
+            <img src="images/Jada_Gannaway_Headshot.jpg" alt="Jada Gannaway's Headshot"/>
+            <div class="info">
+                <h2>Jada Gannaway</h2>
+                
+                <p>Jada Gannaway is a fifth-year doctoral candidate studying Caribbean History. Gannaway’s research interests include Black Left politics, Black women’s history, and digital pedagogy. </p>
+            </div>    
+        </div>
+        <div class="member">
+            <img src="images/Morgan_1.jpg" alt="MH headhsot">
+            <div class="info"> 
+                <h2>Morgan Hill</h2>
+                
+                <p>Morgan Hill is a third-year MFA candidate focused in Studio Arts. Hill’s research documents physical rituals that form communal bonds in black culture and other marginalized communities. The output develops into abstract art that is informed by black sensibility, illegibility, and the right to opacity. </p>
+            </div>
+        </div>
+        <div class="member">
+            <img src="images/Madiha headshot.jpg" alt="Madiha Ghous's Headshot"/>
+            <div class="info">
+                <h2>Madiha Ghous</h2>
+                
+                <p>Madiha Ghous is Ruth & Yunck Endowed Scholar and Doctoral Candidate in the Department of English and Film Studies at the Michigan State University. Her teaching and research interests revolve around the areas of Post & Decolonial studies, Global Anglophone Literatures, Cultural Cold War Studies, Critical Muslim Studies and South-Asia Studies.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<body>
+
 </body>
 </html>
     
