@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
 </head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Adjust width for two members per row on larger screens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 80px; /* Fixed width for images */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px; /* Spacing between image and text */
+}
+
+.info {
+    flex-grow: 1; /* Allow info to take the remaining space */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .member {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0; /* Margin adjustment for mobile */
+    }
+}
+
+</style>
+<main>
+    <div class="team">
+        <div class="member">
+            <img src="member1.jpg" alt="Member 1">
+            <div class="info">  
+                <h2>Rylee LaLonde</h2>
+                <p>Rylee LaLonde is a first year doctoral student studying Anthropology. Her research interests include Native American and Indigenous Studies, Community-Based Research, Human Rights Investigations, and Rights and Reclamation. </p>
+            </div>
+        </div>
+        <div class="member">
+            <img src="member2.jpg" alt="Member 2">
+            <div class="info">
+                <h2>Jada Gannaway</h2>
+                
+                <p>Jada Gannaway is a fifth-year doctoral candidate studying Caribbean History. Gannaway’s research interests include Black Left politics, Black women’s history, and digital pedagogy. </p>
+            </div>    
+        </div>
+        <div class="member">
+            <img src="member3.jpg" alt="Member 3">
+            <div class="info"> 
+                <h2>Morgan Hill</h2>
+                
+                <p>Morgan Hill is a third-year MFA candidate focused in Studio Arts. Hill’s research documents physical rituals that form communal bonds in black culture and other marginalized communities. The output develops into abstract art that is informed by black sensibility, illegibility, and the right to opacity. </p>
+            </div>
+        </div>
+        <div class="member">
+            <img src="member4.jpg" alt="Member 4">
+            <div class="info">
+                <h2>Madiha Ghous</h2>
+                
+                <p>Madiha Ghous is Ruth & Yunck Endowed Scholar and Doctoral Candidate in the Department of English and Film Studies at the Michigan State University. Her teaching and research interests revolve around the areas of Post & Decolonial studies, Global Anglophone Literatures, Cultural Cold War Studies, Critical Muslim Studies and South-Asia Studies.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <!--<p>&copy; 2024 Your Company Name</p> -->
+</footer>
 <body>
-    
+    <!--Jada: Jada Gannaway is a fifth-year doctoral candidate studying Caribbean History. Gannaway’s research interests include Black Left politics, Black women’s history, and digital pedagogy. 
+Morgan: Morgan Hill is a third-year MFA candidate focused in Studio Arts. Hill’s research documents physical rituals that form communal bonds in black culture and other marginalized communities. The output develops into abstract art that is informed by black sensibility, illegibility, and the right to opacity. 
+Madiha: Madiha Ghous is Ruth & Yunck Endowed Scholar and Doctoral Candidate in the Department of English and Film Studies at the Michigan State University. Her teaching and research interests revolve around the areas of Post & Decolonial studies, Global Anglophone Literatures, Cultural Cold War Studies, Critical Muslim Studies and South-Asia Studies.
+Rylee: Rylee LaLonde is a first year doctoral student studying Anthropology. Her research interests include Native American and Indigenous Studies, Community-Based Research, Human Rights Investigations, and Rights and Reclamation. -->
 </body>
 </html>
