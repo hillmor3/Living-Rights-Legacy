@@ -181,6 +181,101 @@
   .menu-hover-lines .active a::after {
     width: 100%;
   } 
+  .three-column-footer-contact-form-container {
+  background-color: #8a8a8a;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form {
+  max-width: 75rem;
+  margin: auto; /* Centered */
+  color: #e6e6e6;
+  padding: 2rem 0; /* Reduced padding */
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+  width: 100%; /* Default to full width */
+  float: left;
+  padding: 0.5rem; /* Reduced padding */
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .contact-details p,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right p {
+  font-size: 0.7rem; /* Smaller font size */
+  margin-bottom: 0; /* Remove margin */
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .input-group,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .input-group,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right .input-group {
+  padding: 0.5rem 0 0; /* Reduced padding */
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .input-group input,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .input-group input,
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .input-group textarea {
+  border-bottom: 1px solid #cacaca; /* Thinner border */
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right h2 {
+  font-size: 1rem; /* Adjust header size */
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left,
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+      width: 25%; /* Keep original width for larger screens */
+  }
+}
+/*Footer*/
+.three-column-footer-contact-form-container {
+  background-color: #8a8a8a;
+  padding: 1rem 0; /* Reduced padding */
+}
+
+.three-column-footer-contact-form {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Evenly distribute space */
+  max-width: 75rem;
+  margin: auto; /* Centered */
+  color: #e6e6e6;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1; /* Allow equal width */
+  padding: 0.5rem; /* Compact padding */
+}
+
+.footer-left h6, .footer-center h6, .footer-right h4 {
+  font-size: 0.9rem; /* Smaller header size */
+  margin: 0.5rem 0; /* Reduced margin */
+}
+
+.footer-left p, .footer-right p {
+  font-size: 0.8rem; /* Smaller text size */
+  margin: 0; /* Remove margin */
+}
+
+.input-group {
+  display: flex; /* Use flex for input alignment */
+  flex-direction: column; /* Stack inputs vertically */
+  margin-bottom: 0.5rem; /* Space between input groups */
+}
+
+.input-group-field {
+  margin-bottom: 0.5rem; /* Space between input and button */
+}
+
+.button {
+  padding: 0.5rem; /* Reduced button padding */
+  width: auto; /* Auto width for compactness */
+}
+
+textarea {
+  resize: none; /* Prevent resizing */
+  height: 60px; /* Fixed height */
+}
     </style>
 <body>
     <div class="news-image-rights-container">
