@@ -5,9 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audience</title>
 </head>
+<div class="hero-section">
+  <div class="hero-section-text">
+  </div>
+</div>   
+<nav> 
+    <ul class="menu menu-hover-lines">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="audience.html">Audience</a></li>
+      <li><a href="deliverables.html">Deliverables and Outcomes</a></li>
+      <li><a href="functionality.html">Functionality and Tech</a></li>
+      <li><a href="environmentalscan.html">Environmental Scan</a></li>
+    </ul>
+  </nav>
+  <style>
+    /*Navigation*/ 
+    .menu-hover-lines {
+    text-align: justify;
+    list-style-type: none;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 750;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines li a {
+    padding: 0.75rem 0;
+    color: #A9A9A9;
+    position: relative;
+    margin-left: 1rem;
+    text-decoration: none;
+    display: block;
+    float: left;
+  }
+  
+  .menu-hover-lines li:first-child a {
+    margin-left: 0;
+  }
+  
+  .menu-hover-lines li.active > a {
+    background-color: transparent;
+  }
+  
+  .menu-hover-lines a:before,
+  .menu-hover-lines a::after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    background-color: #e1ad01;
+    width: 0;
+  }
+  
+  .menu-hover-lines a::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .menu-hover-lines a::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menu-hover-lines a:hover,
+  .menu-hover-lines li.active > a {
+    color: #0a0a0a;
+    transition: all 0.35s ease;
+  }
+  
+  .menu-hover-lines a:hover::before,
+  .menu-hover-lines .active a::before,
+  .menu-hover-lines a:hover::after,
+  .menu-hover-lines .active a::after {
+    width: 100%;
+  }  
+  .hero-section {
+    background: url("images/graphic\ for\ audience\ section.webp") 50% no-repeat;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .hero-section .hero-section-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+    text-align: center;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+  </style>
 <body>
+  <h1 class="title"> Our Audience</h1>
+  <section class="description">
     Living-Rights-Legacy invites a wide and diverse audience to explore the complex world of Human Rights History and activism through an interactive digital project featuring archival exhibits and crowd-sourced personal narratives on the subject.This platform is open to anyone who wants to engage with the contents of the Human Rights exhibits in the Canadian Musuem of Human Rights through a digital modality, in specific, but more generally for anyone with an interest and investment in understanding, preserving and engaging with the stories of human rights struggles across the globe. 
     <p>Our platform is designed for <strong>Scholars and Researchers, Students and Educators, Human Rights Advocates & Activists, Cultural Heritage professionals and institutions, General public, and Indigenous and marginalized communities </strong>.</p>
-<img src="images\graphic for audience section.webp" alt="Graphic"/>
+</section>
 </body>
 </html>
